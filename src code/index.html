@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAgro Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-green-500">
+    <header class="mx-4">
+        <div class="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl" href="">eAgroCom</a>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex justify-around">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="">Home</a></li>
+                    <li>
+                        <details>
+                            <summary>About</summary>
+                            <ul class="w-48">
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Who We Are</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu controllers -->
+            <div class="md:hidden">
+                <div id="bars">
+                    <button onclick="openCross()">
+                        <img class="w-8 h-8" src="../images/menubars.png" alt="Menu bars">
+                    </button>
+                </div>
+                <div id="cross" class="hidden">
+                    <button onclick="openBars()">
+                        <img class="w-8 h-8" src="../images/menucross.png" alt="Cross menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu items -->
+        <div id="small-menu" class="hidden md:hidden">
+            <ul class="menu menu-vertical py-1">
+                <li><a href="">Home</a></li>
+                <li>
+                    <details>
+                        <summary>About</summary>
+                        <ul class="">
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Who We Are</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="">Buy</a></li>
+                <li><a href="">Sell</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main section -->
+    <main></main>
+    <!-- Footer section -->
+    <footer></footer>
+    <!-- Script linking -->
+    <script src="./scripts/navbar.js"></script>
+</body>
+
+</html>
