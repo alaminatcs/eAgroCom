@@ -20,7 +20,7 @@
             <div class="hidden md:flex justify-around">
                 <ul class="menu menu-horizontal px-1">
                     <li><a href="">Home</a></li>
-                    <li>
+                    <li class="relative z-10">
                         <details>
                             <summary>About</summary>
                             <ul class="w-48">
@@ -67,6 +67,31 @@
                 <li><a href="">Sell</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+        </div>
+
+        <!-- Banner section -->
+        <div class="carousel h-[30rem] w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="../images/display collection/c0.png" class="h-full w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="../images/display collection/c1.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="../images/display collection/c2.png" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Main section -->
