@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAgro Commerce - Buy</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-green-500 bg-[#1D232A]">
+    <header class="mx-4">
+        <div class="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl" href="../index.html">eAgroCom</a>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex justify-around">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">Buy</a></li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="courier.html">Courier</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu controllers -->
+            <div class="md:hidden">
+                <div id="bars">
+                    <button onclick="openCross()">
+                        <img class="w-8 h-8" src="../images/menubars.png" alt="Menu bars">
+                    </button>
+                </div>
+                <div id="cross" class="hidden">
+                    <button onclick="openBars()">
+                        <img class="w-8 h-8" src="../images/menucross.png" alt="Cross menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu items -->
+        <div id="small-menu" class="hidden md:hidden">
+            <ul class="menu menu-vertical py-1">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="courier.html">Courier</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="px-8 py-12">
+        <h1 class="text-4xl font-bold mb-6 text-center">Buy Agricultural Products Near You</h1>
+
+        <!-- Buy Crops Section -->
+        <section id="buy-crops" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Buy Crops</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Crop item 1 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Wheat</h3>
+                    <p>Location: Dhaka</p>
+                    <p>Price: 30 BDT/kg</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Crop item 2 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Rice</h3>
+                    <p>Location: Chittagong</p>
+                    <p>Price: 40 BDT/kg</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Crop item 3 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Maize</h3>
+                    <p>Location: Sylhet</p>
+                    <p>Price: 25 BDT/kg</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Add more crop items as needed -->
+            </div>
+        </section>
+
+        <!-- Buy Crop Medicines Section -->
+        <section id="buy-medicines" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Buy Crop Medicines</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Medicine item 1 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Pesticides</h3>
+                    <p>Location: Dhaka</p>
+                    <p>Price: 200 BDT/bottle</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Medicine item 2 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Fungicides</h3>
+                    <p>Location: Khulna</p>
+                    <p>Price: 180 BDT/bottle</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Medicine item 3 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Herbicides</h3>
+                    <p>Location: Barisal</p>
+                    <p>Price: 220 BDT/bottle</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Add more medicine items as needed -->
+            </div>
+        </section>
+
+        <!-- Buy Agricultural Tools Section -->
+        <section id="buy-tools" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Buy Agricultural Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tool item 1 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Tractor</h3>
+                    <p>Location: Rajshahi</p>
+                    <p>Price: 1,000,000 BDT</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Tool item 2 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Plough</h3>
+                    <p>Location: Sylhet</p>
+                    <p>Price: 50,000 BDT</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Tool item 3 -->
+                <div class="card bg-gray-800 text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Irrigation Pump</h3>
+                    <p>Location: Dhaka</p>
+                    <p>Price: 150,000 BDT</p>
+                    <button class="btn mt-4">Buy Now</button>
+                </div>
+                <!-- Add more tool items as needed -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 eAgroCom. All rights reserved.</p>
+            <p>Contact: info@eagrocom.com | Phone: +880123456789</p>
+        </div>
+    </footer>
+
+    <!-- Script Linking -->
+    <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

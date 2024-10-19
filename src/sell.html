@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell - eAgro Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-green-500 bg-[#1D232A]">
+    <header class="mx-4">
+        <div class="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl" href="">eAgroCom</a>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex justify-around">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="courier.html">Courier</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu controllers -->
+            <div class="md:hidden">
+                <div id="bars">
+                    <button onclick="openCross()">
+                        <img class="w-8 h-8" src="../images/menubars.png" alt="Menu bars">
+                    </button>
+                </div>
+                <div id="cross" class="hidden">
+                    <button onclick="openBars()">
+                        <img class="w-8 h-8" src="../images/menucross.png" alt="Cross menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu items -->
+        <div id="small-menu" class="hidden md:hidden">
+            <ul class="menu menu-vertical py-1">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="">Sell</a></li>
+                <li><a href="courier.html">Courier</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="px-8 py-12">
+        <h1 class="text-4xl font-bold mb-6">Sell Your Products</h1>
+
+        <!-- Sell Crops Section -->
+        <section id="sell-crops-section" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Sell Crops</h2>
+            <p class="mb-4 text-white">Farmers can list their fresh crops for sale here. Provide details about your crop, quantity,
+                and location.</p>
+            <form class="bg-gray-800 p-6 rounded-lg">
+                <div class="mb-4">
+                    <label class="block mb-2">Crop Name:</label>
+                    <input type="text" placeholder="Enter crop name" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Quantity (kg):</label>
+                    <input type="number" placeholder="Enter quantity" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Location:</label>
+                    <input type="text" placeholder="Enter your location" class="input input-bordered w-full" />
+                </div>
+                <button type="submit" class="btn">Submit Crop for Sale</button>
+            </form>
+        </section>
+
+        <!-- Sell Agricultural Goods Section -->
+        <section id="sell-goods-section" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Sell Agricultural Goods</h2>
+            <p class="mb-4 text-white">If you're a farmer or local producer, list your agricultural goods such as dairy, fruits,
+                and vegetables for sale.</p>
+            <form class="bg-gray-800 p-6 rounded-lg">
+                <div class="mb-4">
+                    <label class="block mb-2">Product Name:</label>
+                    <input type="text" placeholder="Enter product name" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Quantity:</label>
+                    <input type="text" placeholder="Enter quantity (e.g., 50 units)"
+                        class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Location:</label>
+                    <input type="text" placeholder="Enter your location" class="input input-bordered w-full" />
+                </div>
+                <button type="submit" class="btn">Submit Product for Sale</button>
+            </form>
+        </section>
+
+        <!-- Sell Agricultural Tools Section -->
+        <section id="sell-tools-section">
+            <h2 class="text-3xl font-bold mb-4">Sell Agricultural Tools</h2>
+            <p class="mb-4 text-white">Agricultural tool suppliers can list their products such as tractors, plows, or fertilizers
+                for farmers to buy.</p>
+            <form class="bg-gray-800 p-6 rounded-lg">
+                <div class="mb-4">
+                    <label class="block mb-2">Tool Name:</label>
+                    <input type="text" placeholder="Enter tool name" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Tool Type:</label>
+                    <input type="text" placeholder="Enter tool type (e.g., plow, tractor)"
+                        class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Price:</label>
+                    <input type="number" placeholder="Enter price in USD" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Location:</label>
+                    <input type="text" placeholder="Enter your location" class="input input-bordered w-full" />
+                </div>
+                <button type="submit" class="btn">Submit Tool for Sale</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 eAgroCom. All rights reserved.</p>
+            <p>Contact: info@eagrocom.com | Phone: +880123456789</p>
+        </div>
+    </footer>
+
+    <!-- Script linking -->
+    <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

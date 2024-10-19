@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAgro Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-green-500 bg-[#1D232A]">
+    <header class="mx-4">
+        <div class="navbar">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl" href="">eAgroCom</a>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden md:flex justify-around">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="">Home</a></li>
+                    <!-- <li class="relative z-10">
+                        <details>
+                            <summary>About</summary>
+                            <ul class="w-48">
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Who We Are</a></li>
+                            </ul>
+                        </details>
+                    </li> -->
+                    <li><a href="src/buy.html">Buy</a></li>
+                    <li><a href="src/sell.html">Sell</a></li>
+                    <li><a href="src/courier.html">Courier</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu controllers -->
+            <div class="md:hidden">
+                <div id="bars">
+                    <button onclick="openCross()">
+                        <img class="w-8 h-8" src="images/menubars.png" alt="Menu bars">
+                    </button>
+                </div>
+                <div id="cross" class="hidden">
+                    <button onclick="openBars()">
+                        <img class="w-8 h-8" src="images/menucross.png" alt="Cross menu">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu items -->
+        <div id="small-menu" class="hidden md:hidden">
+            <ul class="menu menu-vertical py-1">
+                <li><a href="">Home</a></li>
+                <!-- <li>
+                    <details>
+                        <summary>About</summary>
+                        <ul class="">
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Who We Are</a></li>
+                        </ul>
+                    </details>
+                </li> -->
+                <li><a href="src/buy.html">Buy</a></li>
+                <li><a href="src/sell.html">Sell</a></li>
+                <li><a href="src/courier.html">Courier</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main section -->
+    <main>
+        <!-- Banner with Weather Forecast -->
+        <section class="h-[30rem] bg-cover bg-center text-white"
+            style="background-image: url('images/display collection/c0.png');">
+            <div class="flex justify-center items-center h-full">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold mb-4">Next week's weather forecast</h1>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Weather forecast cards (placeholder data) -->
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 1: Sunny</p>
+                            <p>Temperature: 25°C</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 2: Cloudy</p>
+                            <p>Temperature: 22°C</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 3: Sunny</p>
+                            <p>Temperature: 25°C</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 4: Cloudy</p>
+                            <p>Temperature: 22°C</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 5: Sunny</p>
+                            <p>Temperature: 25°C</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 6: Cloudy</p>
+                            <p>Temperature: 22°C</p>
+                        </div>
+                        <!-- <div class="bg-gray-800 p-4 rounded-lg">
+                            <p>Day 7: Sunny</p>
+                            <p>Temperature: 25°C</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crop Recommendation Section -->
+        <section id="crop-recommendation-section" class="my-8 px-8">
+            <h2 class="text-3xl font-bold mb-4">Crop Recommendation System</h2>
+            <form class="bg-gray-800 p-6 rounded-lg text-white">
+                <div class="mb-4">
+                    <label class="block mb-2">Region:</label>
+                    <input type="text" placeholder="Enter your region" class="input input-bordered w-full" />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2">Soil Type:</label>
+                    <input type="text" placeholder="Enter your soil type" class="input input-bordered w-full" />
+                </div>
+                <button type="submit" class="btn">Get Recommendation</button>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="my-8 px-8">
+            <h2 class="text-3xl font-bold mb-4">About eAgroCom</h2>
+            <p class="text-gray-300">eAgroCom is an innovative platform that connects farmers and customers across the
+                food supply chain. We provide crop recommendation systems, local buying/selling options for agricultural
+                goods, and transportation services tailored to meet your needs. With a focus on sustainable farming and
+                ease of trade, eAgroCom is the go-to solution for modern farmers and consumers alike.</p>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 eAgroCom. All rights reserved.</p>
+            <p>Contact: info@eagrocom.com | Phone: +880123456789</p>
+        </div>
+    </footer>
+    <!-- Script linking -->
+    <script src="src/scripts/navbar.js"></script>
+</body>
+
+</html>
